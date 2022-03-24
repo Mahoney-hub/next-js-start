@@ -1,10 +1,9 @@
 import Heading from "../components/Heading";
 
-const Error = () => (
-    <>
-        <Heading text={'404'}/>
-        <Heading tag={'h2'} text={'Something is going wrong...'}/>
-    </>
-)
+const Posts = () => (
+  <>
+    <Heading text="Posts list:" />
+  </>
+);
 
-export default Error;
+export default Posts;

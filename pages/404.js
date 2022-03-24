@@ -1,10 +1,22 @@
 import Heading from "../components/Heading";
+import {useRouter} from "next/router";
+import {useEffect} from "react";
 
-const Error = () => (
-    <>
-        <Heading text={'404'}/>
-        <Heading tag={'h2'} text={'ERROR'}/>
-    </>
-)
+const Error = () => {
+    const router = useRouter()
 
-export default Error
+    useEffect(() => {
+        setTimeout(() => {
+            router.push('/')
+        }, 3000)
+    }, [router])
+
+    return (
+        <>
+            <Heading text="404"/>
+            <Heading tag="h2" text="Something is going wrong..."/>
+        </>
+    )
+}
+
+export default Error;

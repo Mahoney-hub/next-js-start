@@ -1,11 +1,12 @@
 import Layout from "../components/Layout";
-import '../styles/globals.css'
+import '../styles/globals.scss';
 
 const MyApp = ({ Component, pageProps }) => (
-    <Layout>
-        <Component {...pageProps} />
-    </Layout>
-)
+  <Layout>
+    <main>
+      <Component {...pageProps} />
+    </main>
+  </Layout>
+);
 
-export default MyApp
-
+export default MyApp;

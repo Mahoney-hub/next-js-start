@@ -1,11 +1,9 @@
-import Heading from "./Footer";
+import Navbar from "./Navbar";
 
-const Header = ({tag, text}) => {
-    return (
-        <header>
-            <Heading tag={'h3'} text={'Header'}/>
-        </header>
-    )
-}
+const Header = () => (
+  <header>
+    <Navbar />
+  </header>
+);
 
-export default Header
+export default Header;
